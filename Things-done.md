@@ -17,9 +17,27 @@
     Git diff
 
 3. Branching and merging
-    Git branch
+    Git branch [branch name] (create new) 
+    Git checkout [branch name](leave the branch)
+    Git switch -c [branch name]
     Git merge [branch]
     Git log
+
+4.  Tags
+    git tag(lightweight tag)
+    git tag -a "name" -m "msg"
+    git show tag "name"
+    git tag -d "name" (delete)
+    git push origin "name"
+
+5. push to github 
+    git push 
+    git push origin "branch name"
+
+6. git cherry-pick [hash value]
+    
+
+
 
 # jenkins
 
