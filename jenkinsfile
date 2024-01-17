@@ -1,5 +1,6 @@
 pipeline{
     any agent
+    
     stages{
         stage("A"){
             steps{
@@ -9,6 +10,7 @@ pipeline{
                     
                     // Display the tabular data
                     echo "Tabular Data:\n${tabularData}"
+            }
             post{
                 always{
                     echo "========always========"
