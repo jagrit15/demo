@@ -1,18 +1,18 @@
-version: 0.2
-phase:
+version: '0.2'
+phases:
   install:
-    command:
+    commands:
       - echo installing Nginx
       - sudo apt-get update
       - sudo apt-get install nginx -y
-  built:
-    command:
+  build:
+    commands:
       - echo build started on 'date'
       - cp index.html /var/www/html
-  post_built:
-    command:
+  post_build:
+    commands:
       - echo configuring Nginx
 
 artifacts:
   files:
-   - '**/*'
+    - '**/*'
