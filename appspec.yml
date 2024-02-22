@@ -1,14 +1,17 @@
-version: 0.0
-os: linux
-file:
+version: '0.0'
+os:
+  - linux
+  - windows
+  - macos
+files:
   - source: /
     destination: /var/www/html
-Hook: 
+hooks:
   AfterInstall:
     - location: script/install_nginx.sh
       timeout: 300
       runas: root
-  applicationstart:
+  ApplicationStart:
     - location: script/start_nginx.sh
       timeout: 300
       runas: root
